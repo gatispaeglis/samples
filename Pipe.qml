@@ -3,19 +3,19 @@ import QtQuick 2.0
 Item {
 
     width: 30
-    property alias label: sizeLabel.text
-    property alias index: xAxis.text
+//    property alias label: sizeLabel.text
+//    property alias index: xAxis.text
 
-    Text {
-        id: sizeLabel
-        anchors.bottom: pipe.top
-        anchors.horizontalCenter: pipe.horizontalCenter
-        text: "3"
-    }
+//    Text {
+//        id: sizeLabel
+//        anchors.bottom: pipe.top
+//        anchors.horizontalCenter: pipe.horizontalCenter
+//        text: "3"
+//    }
 
     Rectangle {
         id: pipe
-        width: 30
+        width: 10
         height: parent.height
         border.color: "black"
         border.width: 1
@@ -23,11 +23,11 @@ Item {
 
     }
 
-    Text {
-        id: xAxis
-        anchors.top: pipe.bottom
-        anchors.horizontalCenter: pipe.horizontalCenter
-    }
+//    Text {
+//        id: xAxis
+//        anchors.top: pipe.bottom
+//        anchors.horizontalCenter: pipe.horizontalCenter
+//    }
 
 
 }
