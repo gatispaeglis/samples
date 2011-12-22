@@ -28,8 +28,6 @@ Rectangle {
     Row {
         id: pipeRow
         anchors.centerIn: parent
-        //width: parent.width / 2
-        //height: parent.height / 2
         spacing: 8
 
         Repeater {
@@ -38,9 +36,9 @@ Rectangle {
 
             Pipe {
                 anchors.bottom: pipeRow.bottom
-                //x: adjustedX + 30 // + width
-                height: yy * 10
-
+                height: yy === 0 ? 1 : yy * 10 // take care of having pipes for 0 values
+                label: yy
+                index: xx
             }
         }
     }
