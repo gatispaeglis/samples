@@ -1,5 +1,4 @@
 import QtQuick 2.0
-// KDE QtScript ECMA-262 (ECMAScript edition)
 
 // [0; 1) Math.random()
 // [0; 2) Math.random() + Math.random()
@@ -143,7 +142,7 @@ Rectangle {
     MouseArea {
         anchors.fill: parent
         onClicked: {
-            showHistogram(80000, 4, 8)
+            showHistogram(80000, 4, 16)
             //showHistogram(80000, 2, 16)
             //showHistogram(80000, 1, 8)
         }
